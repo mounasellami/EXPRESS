@@ -1,0 +1,10 @@
+<%- include('partials/header'); -%>
+<h1 class="center"><%= title %></h1>
+
+
+<% blogs.forEach(function(post) { %>
+    <h1><%= post.title %></h1>
+    <p><%= post.text %></p>
+<% }) %>
+
+<%- include('partials/footer'); -%>
